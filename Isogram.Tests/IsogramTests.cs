@@ -6,6 +6,12 @@ namespace Isogram.Tests
 {
     public class IsogramTests
     {
+        [Theory]
+        [InlineData("SAgar",true)]
+        public void TestWordWithTheory(string s, bool y)
+        {
+            Assert.Equal(y, IsogramClass.Isogram(s));
+        }
         [Fact]
         public void TestWordIsogram()
         {

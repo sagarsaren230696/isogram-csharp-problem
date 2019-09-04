@@ -11,7 +11,7 @@ namespace isogram_csharp_problem
             var flag = true;
             for(var i = 0; i<phraseCharArray.Length-1;i++)
             {
-                if(phraseCharArray[i]>='a' && phraseCharArray[i]<='z')
+                if((phraseCharArray[i]>='a' && phraseCharArray[i]<='z')||(phraseCharArray[i] >= 'A' && phraseCharArray[i] <= 'Z'))
                 {
                     for(var j=i+1;j<phraseCharArray.Length;j++)
                     {
